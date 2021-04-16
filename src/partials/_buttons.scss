@@ -1,0 +1,28 @@
+.blue_big_btn{
+   background-color: $blue400;
+   border: 2px solid $blue400;
+   border-radius: 30px;
+   padding: 10px 20px;
+   font-size: $fontMediumBig;
+   color: $white;
+   cursor: pointer;
+   transition: all 0.3s;
+   &:hover{
+      background-color: $blue300;
+      border: 2px solid $blue300; 
+   }
+}
+.white_big_btn{
+   cursor: pointer;
+   background-color: transparent;
+   border: 2px solid $white;
+   border-radius: 30px;
+   padding: 10px 20px;
+   font-size: $fontMediumBig;
+   color: $white;
+   transition: all 0.3s;
+   &:hover{
+      background-color: $white;
+      color: $black;
+   }
+}

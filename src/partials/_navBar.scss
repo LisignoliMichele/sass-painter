@@ -1,0 +1,45 @@
+#header_nav{
+   background-color: white;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   .container{
+      @include my-display-flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+   }
+}
+.nav_left{
+   .logo{
+      @include my-display-flex;
+      align-items: center;
+      img{
+         width: 40px;
+      }
+   }
+   ::after{
+      content: "Adobe Photoshop";
+      margin-left: 20px; 
+   }
+}
+.nav_right{
+   ul{
+      @include my-display-flex;
+      list-style: none;
+      text-align: right;
+      li::after{
+         content: "\25BC";
+         font-size: 10px;
+         margin-left: 10px;
+         }
+      li{
+         margin-left: 20px;  
+      }
+   }
+ 
+
+
+}
+
+

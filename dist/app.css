@@ -1,1 +1,121 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+*:focus {
+  outline: transparent;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+body {
+  background-color: #090027;
+}
+
+.blue_big_btn {
+  background-color: #0d66d0;
+  border: 2px solid #0d66d0;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.blue_big_btn:hover {
+  background-color: #1473e6;
+  border: 2px solid #1473e6;
+}
+
+.white_big_btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 22px;
+  color: #fff;
+  transition: all 0.3s;
+}
+.white_big_btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+#header_nav {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+#header_nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.nav_left .logo {
+  display: flex;
+  align-items: center;
+}
+.nav_left .logo img {
+  width: 40px;
+}
+.nav_left ::after {
+  content: "Adobe Photoshop";
+  margin-left: 20px;
+}
+
+.nav_right ul {
+  display: flex;
+  list-style: none;
+  text-align: right;
+}
+.nav_right ul li::after {
+  content: "▼";
+  font-size: 10px;
+  margin-left: 10px;
+}
+.nav_right ul li {
+  margin-left: 20px;
+}
+
+#hero {
+  margin-top: 80px;
+  height: 700px;
+  width: 100%;
+  background-image: url("https://cc-prod.scene7.com/is/image/CCProdAuthor/dt-ps-max-poster-image?$pjpeg$&jpegSize=300&wid=1440");
+  background-size: cover;
+  background-position: right top;
+  display: flex;
+}
+#hero .logo_photoshop {
+  max-width: 100px;
+  margin-bottom: 25px;
+}
+#hero .logo_photoshop img {
+  width: 100%;
+}
+#hero h1 {
+  margin-bottom: 25px;
+}
+#hero p {
+  margin-bottom: 25px;
+  font-size: 22px;
+  color: #fff;
+}

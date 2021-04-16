@@ -1,0 +1,25 @@
+#hero{
+   margin-top: 80px;
+   height: 700px;
+   width: 100%;
+   background-image:url('https://cc-prod.scene7.com/is/image/CCProdAuthor/dt-ps-max-poster-image?$pjpeg$&jpegSize=300&wid=1440');
+   background-size: cover;
+   background-position: right top;
+   @include my-display-flex;
+  
+   .logo_photoshop{
+      max-width: 100px;
+      margin-bottom: $marginNormal;
+      img{
+         width: 100%;
+      }
+   }
+   h1{
+      margin-bottom: $marginNormal;
+   }
+   p{
+      margin-bottom: $marginNormal;
+      font-size: $fontMediumBig;
+      color: $white;
+   }
+}
