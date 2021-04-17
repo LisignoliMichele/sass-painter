@@ -1,0 +1,12 @@
+section{
+   margin-top: $marginsection;
+}
+.section_title{
+   color: $creme;;
+   max-width: 70%;
+   margin: auto;
+   text-align: center;
+   h2{
+      margin-bottom: $marginNormal;
+   }
+}
