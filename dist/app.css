@@ -69,6 +69,7 @@ p {
 #header_nav {
   background-color: white;
   position: fixed;
+  z-index: 10;
   width: 100%;
   top: 0;
 }
@@ -86,7 +87,7 @@ p {
 .nav_left .logo img {
   width: 40px;
 }
-.nav_left ::after {
+.nav_left .logo::after {
   content: "Adobe Photoshop";
   margin-left: 20px;
 }
@@ -96,13 +97,13 @@ p {
   list-style: none;
   text-align: right;
 }
+.nav_right ul li {
+  margin-left: 20px;
+}
 .nav_right ul li::after {
   content: "▼";
   font-size: 10px;
   margin-left: 10px;
-}
-.nav_right ul li {
-  margin-left: 20px;
 }
 
 #hero {

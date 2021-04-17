@@ -1,6 +1,7 @@
 #header_nav{
    background-color: white;
    position: fixed;
+   z-index: 10;
    width: 100%;
    top: 0;
    .container{
@@ -17,24 +18,25 @@
       img{
          width: 40px;
       }
+      &::after{
+         content: "Adobe Photoshop";
+         margin-left: 20px; 
+      }
    }
-   ::after{
-      content: "Adobe Photoshop";
-      margin-left: 20px; 
-   }
+ 
 }
 .nav_right{
    ul{
       @include my-display-flex;
       list-style: none;
       text-align: right;
-      li::after{
-         content: "\25BC";
-         font-size: 10px;
-         margin-left: 10px;
-         }
       li{
          margin-left: 20px;  
+         &::after{
+            content: "\25BC";
+            font-size: 10px;
+            margin-left: 10px;
+            }
       }
    }
  
