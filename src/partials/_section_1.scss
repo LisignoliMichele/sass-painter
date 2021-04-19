@@ -22,21 +22,13 @@
       top: 0;
       left: 50%;
       width: 70%;
+      transition: all 1s;
+      &:hover{
+         width: 80%;
+         filter: sepia(2);
+         left: 20%;
+      }
    }
-}
-
-.square_viewpport{
-   width: 100%;
-   height: 400px;
-   background-color: $white;
-   position: relative;
-   img{
-      max-width: 60%;
-      position:absolute;
-      left: 50%;
-      top: 0
-
-   };
 }
 .tool:nth-child(even){
 flex-direction: row-reverse;

@@ -173,19 +173,12 @@ section {
   top: 0;
   left: 50%;
   width: 70%;
+  transition: all 1s;
 }
-
-.square_viewpport {
-  width: 100%;
-  height: 400px;
-  background-color: #fff;
-  position: relative;
-}
-.square_viewpport img {
-  max-width: 60%;
-  position: absolute;
-  left: 50%;
-  top: 0;
+.relativeFile .scontornata:hover {
+  width: 80%;
+  filter: sepia(2);
+  left: 20%;
 }
 
 .tool:nth-child(even) {
